@@ -1,0 +1,5 @@
+# Build context is the repo root for every service, so keep it lean.
+**/node_modules
+**/dist
+.git
+*.log

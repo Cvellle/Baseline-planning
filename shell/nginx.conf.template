@@ -1,0 +1,35 @@
+# envsubst runs this template through env var substitution at container
+# startup (see docker-entrypoint.sh) and writes the result to
+# /etc/nginx/conf.d/default.conf. PEOPLE_UPSTREAM / DELIVERY_UPSTREAM /
+# API_UPSTREAM default to the docker-compose service names but can be
+# overridden without rebuilding the image.
+server {
+    listen 80;
+    root /usr/share/nginx/html;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # People's whole static build (remoteEntry.js + its chunks) is
+    # reachable under /people-remote/ on Shell's own origin -- this is
+    # what lets the browser fetch it with zero CORS configuration.
+    location /people-remote/ {
+        proxy_pass http://${PEOPLE_UPSTREAM}/;
+        proxy_http_version 1.1;
+    }
+
+    location /delivery-remote/ {
+        proxy_pass http://${DELIVERY_UPSTREAM}/;
+        proxy_http_version 1.1;
+    }
+
+    location /api/ {
+        proxy_pass http://${API_UPSTREAM};
+        proxy_http_version 1.1;
+        proxy_set_header Connection '';
+        proxy_buffering off; # required so the SSE endpoint streams instead of batching
+        proxy_cache off;
+    }
+}

@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build output (regenerated inside each image by `npm run build`)
+dist/
+
+# Local env / editor / logs
+.env
+.env.local
+*.log
+.DS_Store

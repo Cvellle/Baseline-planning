@@ -1,0 +1,3414 @@
+{
+  "meta": {
+    "name": "Baseline Planning Suite - seed fixtures",
+    "version": "1.0.0",
+    "gridHorizon": {
+      "from": "2026-04",
+      "to": "2027-03"
+    },
+    "note": "Field names here are not prescriptive. Map this into whatever model your design calls for; keep the ids and the values."
+  },
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Adaeze Okafor",
+      "role": "Tech Lead",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-002",
+      "name": "Lena Okafor",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-003",
+      "name": "Milan Brandt",
+      "role": "Backend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-004",
+      "name": "Samira Haddad",
+      "role": "Frontend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-005",
+      "name": "Tomas Novak",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-006",
+      "name": "Ines Ferreira",
+      "role": "Tech Lead",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-007",
+      "name": "Jonas Weiss",
+      "role": "Tech Lead",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-008",
+      "name": "Priya Nair",
+      "role": "Platform Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-009",
+      "name": "Mateo Duarte",
+      "role": "Data Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-010",
+      "name": "Nora Lindqvist",
+      "role": "QA Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-011",
+      "name": "Kwame Mensah",
+      "role": "QA Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-012",
+      "name": "Elif Demir",
+      "role": "Product Designer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-013",
+      "name": "Lukas Fischer",
+      "role": "Delivery Manager",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-014",
+      "name": "Farida Belkacem",
+      "role": "QA Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-015",
+      "name": "Sven Ahlberg",
+      "role": "QA Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-016",
+      "name": "Anja Keller",
+      "role": "Product Designer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-017",
+      "name": "Dimitri Petrov",
+      "role": "Frontend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-018",
+      "name": "Yara Saleh",
+      "role": "Product Designer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-019",
+      "name": "Bastian Vogel",
+      "role": "Platform Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-020",
+      "name": "Chiara Rossi",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-021",
+      "name": "Oskar Lindgren",
+      "role": "Backend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-022",
+      "name": "Amira Chalabi",
+      "role": "Platform Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-023",
+      "name": "Henrik Bauer",
+      "role": "QA Engineer",
+      "weeklyHours": 20
+    },
+    {
+      "id": "emp-024",
+      "name": "Teodora Ilic",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-025",
+      "name": "Rafael Moreno",
+      "role": "QA Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-026",
+      "name": "Lise Dubois",
+      "role": "Tech Lead",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-027",
+      "name": "Nikolai Sokolov",
+      "role": "Data Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-028",
+      "name": "Zeynep Yilmaz",
+      "role": "Backend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-029",
+      "name": "Emil Nyberg",
+      "role": "Tech Lead",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-030",
+      "name": "Paula Santos",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-031",
+      "name": "Ravi Krishnan",
+      "role": "Data Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-032",
+      "name": "Hanna Virtanen",
+      "role": "Data Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-033",
+      "name": "Marek Kowalski",
+      "role": "Data Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-034",
+      "name": "Sofia Marchetti",
+      "role": "Platform Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-035",
+      "name": "Bjorn Halvorsen",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-036",
+      "name": "Leila Mansour",
+      "role": "Tech Lead",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-037",
+      "name": "Andres Gutierrez",
+      "role": "Product Designer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-038",
+      "name": "Katrin Hofer",
+      "role": "Platform Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-039",
+      "name": "Tobias Reinhardt",
+      "role": "Delivery Manager",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-040",
+      "name": "Nadia Kaddour",
+      "role": "Backend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-041",
+      "name": "Viktor Melnyk",
+      "role": "Data Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-042",
+      "name": "Ingrid Solberg",
+      "role": "QA Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-043",
+      "name": "Omar Farouk",
+      "role": "Frontend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-044",
+      "name": "Clara Bergmann",
+      "role": "QA Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-045",
+      "name": "Josef Novotny",
+      "role": "Data Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-046",
+      "name": "Rania Aziz",
+      "role": "Frontend Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-047",
+      "name": "Stefan Lang",
+      "role": "Delivery Manager",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-048",
+      "name": "Maja Jankovic",
+      "role": "Platform Engineer",
+      "weeklyHours": 20
+    },
+    {
+      "id": "emp-049",
+      "name": "Aleks Popovic",
+      "role": "QA Engineer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-050",
+      "name": "Julia Wagner",
+      "role": "Backend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-051",
+      "name": "Pieter de Vries",
+      "role": "Delivery Manager",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-052",
+      "name": "Noor Rahimi",
+      "role": "Backend Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-053",
+      "name": "Gustav Ahlgren",
+      "role": "Product Designer",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-054",
+      "name": "Marta Zielinska",
+      "role": "Delivery Manager",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-055",
+      "name": "Ismail Toprak",
+      "role": "Tech Lead",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-056",
+      "name": "Freya Dahl",
+      "role": "Delivery Manager",
+      "weeklyHours": 20
+    },
+    {
+      "id": "emp-057",
+      "name": "Daniel Schuster",
+      "role": "Tech Lead",
+      "weeklyHours": 40
+    },
+    {
+      "id": "emp-058",
+      "name": "Alina Moroz",
+      "role": "Data Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-059",
+      "name": "Hugo Almeida",
+      "role": "QA Engineer",
+      "weeklyHours": 32
+    },
+    {
+      "id": "emp-060",
+      "name": "Sara Lindholm",
+      "role": "Delivery Manager",
+      "weeklyHours": 40
+    }
+  ],
+  "rateRecords": [
+    {
+      "id": "rate-001",
+      "employeeId": "emp-001",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 80.0
+    },
+    {
+      "id": "rate-002",
+      "employeeId": "emp-001",
+      "validFrom": "2026-03-12",
+      "hourlyCost": 95.0
+    },
+    {
+      "id": "rate-003",
+      "employeeId": "emp-002",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 85.0
+    },
+    {
+      "id": "rate-004",
+      "employeeId": "emp-003",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 100.0
+    },
+    {
+      "id": "rate-005",
+      "employeeId": "emp-004",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 91.0
+    },
+    {
+      "id": "rate-006",
+      "employeeId": "emp-004",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 99.0
+    },
+    {
+      "id": "rate-007",
+      "employeeId": "emp-004",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 106.0
+    },
+    {
+      "id": "rate-008",
+      "employeeId": "emp-005",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 97.0
+    },
+    {
+      "id": "rate-009",
+      "employeeId": "emp-005",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 100.0
+    },
+    {
+      "id": "rate-010",
+      "employeeId": "emp-005",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 106.0
+    },
+    {
+      "id": "rate-011",
+      "employeeId": "emp-006",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 108.0
+    },
+    {
+      "id": "rate-012",
+      "employeeId": "emp-006",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 113.0
+    },
+    {
+      "id": "rate-013",
+      "employeeId": "emp-006",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 116.0
+    },
+    {
+      "id": "rate-014",
+      "employeeId": "emp-007",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 113.0
+    },
+    {
+      "id": "rate-015",
+      "employeeId": "emp-007",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 125.0
+    },
+    {
+      "id": "rate-016",
+      "employeeId": "emp-007",
+      "validFrom": "2026-05-14",
+      "hourlyCost": 122.0
+    },
+    {
+      "id": "rate-017",
+      "employeeId": "emp-008",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 103.0
+    },
+    {
+      "id": "rate-018",
+      "employeeId": "emp-009",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 83.0
+    },
+    {
+      "id": "rate-019",
+      "employeeId": "emp-009",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 90.0
+    },
+    {
+      "id": "rate-020",
+      "employeeId": "emp-009",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 94.0
+    },
+    {
+      "id": "rate-021",
+      "employeeId": "emp-009",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 99.0
+    },
+    {
+      "id": "rate-022",
+      "employeeId": "emp-010",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 70.0
+    },
+    {
+      "id": "rate-023",
+      "employeeId": "emp-010",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 79.0
+    },
+    {
+      "id": "rate-024",
+      "employeeId": "emp-010",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 87.0
+    },
+    {
+      "id": "rate-025",
+      "employeeId": "emp-010",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 93.0
+    },
+    {
+      "id": "rate-026",
+      "employeeId": "emp-011",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 74.0
+    },
+    {
+      "id": "rate-027",
+      "employeeId": "emp-011",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 80.0
+    },
+    {
+      "id": "rate-028",
+      "employeeId": "emp-011",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 85.0
+    },
+    {
+      "id": "rate-029",
+      "employeeId": "emp-012",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 73.0
+    },
+    {
+      "id": "rate-030",
+      "employeeId": "emp-012",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 79.0
+    },
+    {
+      "id": "rate-031",
+      "employeeId": "emp-012",
+      "validFrom": "2026-06-11",
+      "hourlyCost": 76.0
+    },
+    {
+      "id": "rate-032",
+      "employeeId": "emp-013",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 89.0
+    },
+    {
+      "id": "rate-033",
+      "employeeId": "emp-013",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 98.0
+    },
+    {
+      "id": "rate-034",
+      "employeeId": "emp-014",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 81.0
+    },
+    {
+      "id": "rate-035",
+      "employeeId": "emp-014",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 88.0
+    },
+    {
+      "id": "rate-036",
+      "employeeId": "emp-015",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 77.0
+    },
+    {
+      "id": "rate-037",
+      "employeeId": "emp-015",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 82.0
+    },
+    {
+      "id": "rate-038",
+      "employeeId": "emp-016",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 76.0
+    },
+    {
+      "id": "rate-039",
+      "employeeId": "emp-016",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 85.0
+    },
+    {
+      "id": "rate-040",
+      "employeeId": "emp-016",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 91.0
+    },
+    {
+      "id": "rate-041",
+      "employeeId": "emp-017",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 81.0
+    },
+    {
+      "id": "rate-042",
+      "employeeId": "emp-017",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 89.0
+    },
+    {
+      "id": "rate-043",
+      "employeeId": "emp-017",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-044",
+      "employeeId": "emp-017",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 100.0
+    },
+    {
+      "id": "rate-045",
+      "employeeId": "emp-018",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 74.0
+    },
+    {
+      "id": "rate-046",
+      "employeeId": "emp-019",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 90.0
+    },
+    {
+      "id": "rate-047",
+      "employeeId": "emp-019",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 100.0
+    },
+    {
+      "id": "rate-048",
+      "employeeId": "emp-019",
+      "validFrom": "2026-07-16",
+      "hourlyCost": 94.0
+    },
+    {
+      "id": "rate-049",
+      "employeeId": "emp-020",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-050",
+      "employeeId": "emp-021",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 93.0
+    },
+    {
+      "id": "rate-051",
+      "employeeId": "emp-021",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-052",
+      "employeeId": "emp-021",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 102.0
+    },
+    {
+      "id": "rate-053",
+      "employeeId": "emp-022",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 107.0
+    },
+    {
+      "id": "rate-054",
+      "employeeId": "emp-022",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 111.0
+    },
+    {
+      "id": "rate-055",
+      "employeeId": "emp-022",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 114.0
+    },
+    {
+      "id": "rate-056",
+      "employeeId": "emp-023",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 76.0
+    },
+    {
+      "id": "rate-057",
+      "employeeId": "emp-023",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 88.0
+    },
+    {
+      "id": "rate-058",
+      "employeeId": "emp-023",
+      "validFrom": "2026-09-10",
+      "hourlyCost": 81.0
+    },
+    {
+      "id": "rate-059",
+      "employeeId": "emp-024",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 90.0
+    },
+    {
+      "id": "rate-060",
+      "employeeId": "emp-025",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 68.0
+    },
+    {
+      "id": "rate-061",
+      "employeeId": "emp-025",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 73.0
+    },
+    {
+      "id": "rate-062",
+      "employeeId": "emp-025",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 77.0
+    },
+    {
+      "id": "rate-063",
+      "employeeId": "emp-026",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 112.0
+    },
+    {
+      "id": "rate-064",
+      "employeeId": "emp-026",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 117.0
+    },
+    {
+      "id": "rate-065",
+      "employeeId": "emp-027",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-066",
+      "employeeId": "emp-027",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 102.0
+    },
+    {
+      "id": "rate-067",
+      "employeeId": "emp-027",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 105.0
+    },
+    {
+      "id": "rate-068",
+      "employeeId": "emp-027",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 112.0
+    },
+    {
+      "id": "rate-069",
+      "employeeId": "emp-028",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 90.0
+    },
+    {
+      "id": "rate-070",
+      "employeeId": "emp-028",
+      "validFrom": "2026-10-15",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-071",
+      "employeeId": "emp-029",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 113.0
+    },
+    {
+      "id": "rate-072",
+      "employeeId": "emp-029",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 122.0
+    },
+    {
+      "id": "rate-073",
+      "employeeId": "emp-029",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 125.0
+    },
+    {
+      "id": "rate-074",
+      "employeeId": "emp-030",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 90.0
+    },
+    {
+      "id": "rate-075",
+      "employeeId": "emp-030",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 97.0
+    },
+    {
+      "id": "rate-076",
+      "employeeId": "emp-031",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-077",
+      "employeeId": "emp-031",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 99.0
+    },
+    {
+      "id": "rate-078",
+      "employeeId": "emp-031",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 104.0
+    },
+    {
+      "id": "rate-079",
+      "employeeId": "emp-032",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 86.0
+    },
+    {
+      "id": "rate-080",
+      "employeeId": "emp-032",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 92.0
+    },
+    {
+      "id": "rate-081",
+      "employeeId": "emp-033",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 90.0
+    },
+    {
+      "id": "rate-082",
+      "employeeId": "emp-033",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 94.0
+    },
+    {
+      "id": "rate-083",
+      "employeeId": "emp-034",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 92.0
+    },
+    {
+      "id": "rate-084",
+      "employeeId": "emp-034",
+      "validFrom": "2026-11-12",
+      "hourlyCost": 95.0
+    },
+    {
+      "id": "rate-085",
+      "employeeId": "emp-035",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 81.0
+    },
+    {
+      "id": "rate-086",
+      "employeeId": "emp-035",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 88.0
+    },
+    {
+      "id": "rate-087",
+      "employeeId": "emp-036",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 114.0
+    },
+    {
+      "id": "rate-088",
+      "employeeId": "emp-036",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 118.0
+    },
+    {
+      "id": "rate-089",
+      "employeeId": "emp-036",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 125.0
+    },
+    {
+      "id": "rate-090",
+      "employeeId": "emp-037",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 71.0
+    },
+    {
+      "id": "rate-091",
+      "employeeId": "emp-037",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 79.0
+    },
+    {
+      "id": "rate-092",
+      "employeeId": "emp-037",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 82.0
+    },
+    {
+      "id": "rate-093",
+      "employeeId": "emp-038",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 104.0
+    },
+    {
+      "id": "rate-094",
+      "employeeId": "emp-038",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 110.0
+    },
+    {
+      "id": "rate-095",
+      "employeeId": "emp-038",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 117.0
+    },
+    {
+      "id": "rate-096",
+      "employeeId": "emp-038",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 122.0
+    },
+    {
+      "id": "rate-097",
+      "employeeId": "emp-039",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 83.0
+    },
+    {
+      "id": "rate-098",
+      "employeeId": "emp-039",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 86.0
+    },
+    {
+      "id": "rate-099",
+      "employeeId": "emp-039",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 91.0
+    },
+    {
+      "id": "rate-100",
+      "employeeId": "emp-039",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-101",
+      "employeeId": "emp-040",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 89.0
+    },
+    {
+      "id": "rate-102",
+      "employeeId": "emp-041",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 93.0
+    },
+    {
+      "id": "rate-103",
+      "employeeId": "emp-041",
+      "validFrom": "2027-01-13",
+      "hourlyCost": 97.0
+    },
+    {
+      "id": "rate-104",
+      "employeeId": "emp-042",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 70.0
+    },
+    {
+      "id": "rate-105",
+      "employeeId": "emp-042",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 73.0
+    },
+    {
+      "id": "rate-106",
+      "employeeId": "emp-042",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 81.0
+    },
+    {
+      "id": "rate-107",
+      "employeeId": "emp-043",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 94.0
+    },
+    {
+      "id": "rate-108",
+      "employeeId": "emp-044",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 67.0
+    },
+    {
+      "id": "rate-109",
+      "employeeId": "emp-045",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 99.0
+    },
+    {
+      "id": "rate-110",
+      "employeeId": "emp-045",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 106.0
+    },
+    {
+      "id": "rate-111",
+      "employeeId": "emp-045",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 112.0
+    },
+    {
+      "id": "rate-112",
+      "employeeId": "emp-046",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 91.0
+    },
+    {
+      "id": "rate-113",
+      "employeeId": "emp-046",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 95.0
+    },
+    {
+      "id": "rate-114",
+      "employeeId": "emp-047",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 84.0
+    },
+    {
+      "id": "rate-115",
+      "employeeId": "emp-047",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 93.0
+    },
+    {
+      "id": "rate-116",
+      "employeeId": "emp-047",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 97.0
+    },
+    {
+      "id": "rate-117",
+      "employeeId": "emp-047",
+      "validFrom": "2027-02-11",
+      "hourlyCost": 89.0
+    },
+    {
+      "id": "rate-118",
+      "employeeId": "emp-048",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 91.0
+    },
+    {
+      "id": "rate-119",
+      "employeeId": "emp-048",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-120",
+      "employeeId": "emp-049",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 70.0
+    },
+    {
+      "id": "rate-121",
+      "employeeId": "emp-049",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 73.0
+    },
+    {
+      "id": "rate-122",
+      "employeeId": "emp-050",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 92.0
+    },
+    {
+      "id": "rate-123",
+      "employeeId": "emp-050",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 95.0
+    },
+    {
+      "id": "rate-124",
+      "employeeId": "emp-051",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 87.0
+    },
+    {
+      "id": "rate-125",
+      "employeeId": "emp-051",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-126",
+      "employeeId": "emp-052",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 92.0
+    },
+    {
+      "id": "rate-127",
+      "employeeId": "emp-052",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 95.0
+    },
+    {
+      "id": "rate-128",
+      "employeeId": "emp-052",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 99.0
+    },
+    {
+      "id": "rate-129",
+      "employeeId": "emp-053",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 86.0
+    },
+    {
+      "id": "rate-130",
+      "employeeId": "emp-053",
+      "validFrom": "2027-03-10",
+      "hourlyCost": 89.0
+    },
+    {
+      "id": "rate-131",
+      "employeeId": "emp-054",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 77.0
+    },
+    {
+      "id": "rate-132",
+      "employeeId": "emp-054",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 85.0
+    },
+    {
+      "id": "rate-133",
+      "employeeId": "emp-054",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 93.0
+    },
+    {
+      "id": "rate-134",
+      "employeeId": "emp-054",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 100.0
+    },
+    {
+      "id": "rate-135",
+      "employeeId": "emp-055",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 114.0
+    },
+    {
+      "id": "rate-136",
+      "employeeId": "emp-055",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 117.0
+    },
+    {
+      "id": "rate-137",
+      "employeeId": "emp-055",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 122.0
+    },
+    {
+      "id": "rate-138",
+      "employeeId": "emp-055",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 130.0
+    },
+    {
+      "id": "rate-139",
+      "employeeId": "emp-056",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 91.0
+    },
+    {
+      "id": "rate-140",
+      "employeeId": "emp-056",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 100.0
+    },
+    {
+      "id": "rate-141",
+      "employeeId": "emp-057",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 119.0
+    },
+    {
+      "id": "rate-142",
+      "employeeId": "emp-057",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 128.0
+    },
+    {
+      "id": "rate-143",
+      "employeeId": "emp-057",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 137.0
+    },
+    {
+      "id": "rate-144",
+      "employeeId": "emp-057",
+      "validFrom": "2026-08-01",
+      "hourlyCost": 143.0
+    },
+    {
+      "id": "rate-145",
+      "employeeId": "emp-058",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 92.0
+    },
+    {
+      "id": "rate-146",
+      "employeeId": "emp-058",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 96.0
+    },
+    {
+      "id": "rate-147",
+      "employeeId": "emp-059",
+      "validFrom": "2024-07-01",
+      "hourlyCost": 69.0
+    },
+    {
+      "id": "rate-148",
+      "employeeId": "emp-059",
+      "validFrom": "2025-07-01",
+      "hourlyCost": 78.0
+    },
+    {
+      "id": "rate-149",
+      "employeeId": "emp-059",
+      "validFrom": "2026-01-01",
+      "hourlyCost": 84.0
+    },
+    {
+      "id": "rate-150",
+      "employeeId": "emp-060",
+      "validFrom": "2025-01-01",
+      "hourlyCost": 86.0
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-1",
+      "name": "Ledger Consolidation",
+      "startDate": "2026-03-01",
+      "endDate": "2027-02-28"
+    },
+    {
+      "id": "prj-2",
+      "name": "Reporting Platform",
+      "startDate": "2026-04-01",
+      "endDate": "2027-03-31"
+    },
+    {
+      "id": "prj-3",
+      "name": "Client Portal Rebuild",
+      "startDate": "2026-06-01",
+      "endDate": "2027-03-31"
+    },
+    {
+      "id": "prj-4",
+      "name": "Warehouse Data Migration",
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31"
+    }
+  ],
+  "breakdownItems": [
+    {
+      "id": "wbs-001",
+      "projectId": "prj-1",
+      "parentId": null,
+      "name": "Ledger migration"
+    },
+    {
+      "id": "wbs-002",
+      "projectId": "prj-1",
+      "parentId": null,
+      "name": "Reporting cut-over"
+    },
+    {
+      "id": "wbs-003",
+      "projectId": "prj-1",
+      "parentId": null,
+      "name": "Controls and audit"
+    },
+    {
+      "id": "wbs-004",
+      "projectId": "prj-1",
+      "parentId": "wbs-001",
+      "name": "Discovery"
+    },
+    {
+      "id": "wbs-005",
+      "projectId": "prj-1",
+      "parentId": "wbs-002",
+      "name": "Core build"
+    },
+    {
+      "id": "wbs-006",
+      "projectId": "prj-1",
+      "parentId": "wbs-003",
+      "name": "Integration"
+    },
+    {
+      "id": "wbs-007",
+      "projectId": "prj-1",
+      "parentId": "wbs-001",
+      "name": "Migration"
+    },
+    {
+      "id": "wbs-008",
+      "projectId": "prj-1",
+      "parentId": "wbs-002",
+      "name": "Hardening"
+    },
+    {
+      "id": "wbs-009",
+      "projectId": "prj-1",
+      "parentId": "wbs-003",
+      "name": "Handover"
+    },
+    {
+      "id": "wbs-010",
+      "projectId": "prj-1",
+      "parentId": "wbs-001",
+      "name": "Pilot"
+    },
+    {
+      "id": "wbs-011",
+      "projectId": "prj-1",
+      "parentId": "wbs-002",
+      "name": "Discovery"
+    },
+    {
+      "id": "wbs-012",
+      "projectId": "prj-1",
+      "parentId": "wbs-004",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-013",
+      "projectId": "prj-1",
+      "parentId": "wbs-005",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-014",
+      "projectId": "prj-1",
+      "parentId": "wbs-006",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-015",
+      "projectId": "prj-1",
+      "parentId": "wbs-007",
+      "name": "Regression"
+    },
+    {
+      "id": "wbs-016",
+      "projectId": "prj-1",
+      "parentId": "wbs-008",
+      "name": "Cutover"
+    },
+    {
+      "id": "wbs-017",
+      "projectId": "prj-1",
+      "parentId": "wbs-009",
+      "name": "Documentation"
+    },
+    {
+      "id": "wbs-018",
+      "projectId": "prj-1",
+      "parentId": "wbs-010",
+      "name": "Performance"
+    },
+    {
+      "id": "wbs-019",
+      "projectId": "prj-1",
+      "parentId": "wbs-011",
+      "name": "Review"
+    },
+    {
+      "id": "wbs-020",
+      "projectId": "prj-1",
+      "parentId": "wbs-004",
+      "name": "Rework"
+    },
+    {
+      "id": "wbs-021",
+      "projectId": "prj-1",
+      "parentId": "wbs-005",
+      "name": "Sign-off"
+    },
+    {
+      "id": "wbs-022",
+      "projectId": "prj-1",
+      "parentId": "wbs-006",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-023",
+      "projectId": "prj-1",
+      "parentId": "wbs-007",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-024",
+      "projectId": "prj-1",
+      "parentId": "wbs-008",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-025",
+      "projectId": "prj-1",
+      "parentId": "wbs-009",
+      "name": "Regression"
+    },
+    {
+      "id": "wbs-026",
+      "projectId": "prj-1",
+      "parentId": "wbs-010",
+      "name": "Cutover"
+    },
+    {
+      "id": "wbs-027",
+      "projectId": "prj-2",
+      "parentId": null,
+      "name": "Data warehouse"
+    },
+    {
+      "id": "wbs-028",
+      "projectId": "prj-2",
+      "parentId": null,
+      "name": "Reporting UI"
+    },
+    {
+      "id": "wbs-029",
+      "projectId": "prj-2",
+      "parentId": null,
+      "name": "Rollout"
+    },
+    {
+      "id": "wbs-030",
+      "projectId": "prj-2",
+      "parentId": "wbs-027",
+      "name": "Discovery"
+    },
+    {
+      "id": "wbs-031",
+      "projectId": "prj-2",
+      "parentId": "wbs-028",
+      "name": "Core build"
+    },
+    {
+      "id": "wbs-032",
+      "projectId": "prj-2",
+      "parentId": "wbs-029",
+      "name": "Integration"
+    },
+    {
+      "id": "wbs-033",
+      "projectId": "prj-2",
+      "parentId": "wbs-027",
+      "name": "Migration"
+    },
+    {
+      "id": "wbs-034",
+      "projectId": "prj-2",
+      "parentId": "wbs-028",
+      "name": "Hardening"
+    },
+    {
+      "id": "wbs-035",
+      "projectId": "prj-2",
+      "parentId": "wbs-029",
+      "name": "Handover"
+    },
+    {
+      "id": "wbs-036",
+      "projectId": "prj-2",
+      "parentId": "wbs-027",
+      "name": "Pilot"
+    },
+    {
+      "id": "wbs-037",
+      "projectId": "prj-2",
+      "parentId": "wbs-030",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-038",
+      "projectId": "prj-2",
+      "parentId": "wbs-031",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-039",
+      "projectId": "prj-2",
+      "parentId": "wbs-032",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-040",
+      "projectId": "prj-2",
+      "parentId": "wbs-033",
+      "name": "Regression"
+    },
+    {
+      "id": "wbs-041",
+      "projectId": "prj-2",
+      "parentId": "wbs-034",
+      "name": "Cutover"
+    },
+    {
+      "id": "wbs-042",
+      "projectId": "prj-2",
+      "parentId": "wbs-035",
+      "name": "Documentation"
+    },
+    {
+      "id": "wbs-043",
+      "projectId": "prj-2",
+      "parentId": "wbs-036",
+      "name": "Performance"
+    },
+    {
+      "id": "wbs-044",
+      "projectId": "prj-2",
+      "parentId": "wbs-030",
+      "name": "Review"
+    },
+    {
+      "id": "wbs-045",
+      "projectId": "prj-2",
+      "parentId": "wbs-031",
+      "name": "Rework"
+    },
+    {
+      "id": "wbs-046",
+      "projectId": "prj-2",
+      "parentId": "wbs-032",
+      "name": "Sign-off"
+    },
+    {
+      "id": "wbs-047",
+      "projectId": "prj-2",
+      "parentId": "wbs-033",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-048",
+      "projectId": "prj-2",
+      "parentId": "wbs-034",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-049",
+      "projectId": "prj-2",
+      "parentId": "wbs-035",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-050",
+      "projectId": "prj-2",
+      "parentId": "wbs-036",
+      "name": "Regression"
+    },
+    {
+      "id": "wbs-051",
+      "projectId": "prj-3",
+      "parentId": null,
+      "name": "Portal shell"
+    },
+    {
+      "id": "wbs-052",
+      "projectId": "prj-3",
+      "parentId": null,
+      "name": "Account management"
+    },
+    {
+      "id": "wbs-053",
+      "projectId": "prj-3",
+      "parentId": null,
+      "name": "Payments"
+    },
+    {
+      "id": "wbs-054",
+      "projectId": "prj-3",
+      "parentId": "wbs-051",
+      "name": "Discovery"
+    },
+    {
+      "id": "wbs-055",
+      "projectId": "prj-3",
+      "parentId": "wbs-052",
+      "name": "Core build"
+    },
+    {
+      "id": "wbs-056",
+      "projectId": "prj-3",
+      "parentId": "wbs-053",
+      "name": "Integration"
+    },
+    {
+      "id": "wbs-057",
+      "projectId": "prj-3",
+      "parentId": "wbs-051",
+      "name": "Migration"
+    },
+    {
+      "id": "wbs-058",
+      "projectId": "prj-3",
+      "parentId": "wbs-052",
+      "name": "Hardening"
+    },
+    {
+      "id": "wbs-059",
+      "projectId": "prj-3",
+      "parentId": "wbs-053",
+      "name": "Handover"
+    },
+    {
+      "id": "wbs-060",
+      "projectId": "prj-3",
+      "parentId": "wbs-054",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-061",
+      "projectId": "prj-3",
+      "parentId": "wbs-055",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-062",
+      "projectId": "prj-3",
+      "parentId": "wbs-056",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-063",
+      "projectId": "prj-3",
+      "parentId": "wbs-057",
+      "name": "Regression"
+    },
+    {
+      "id": "wbs-064",
+      "projectId": "prj-3",
+      "parentId": "wbs-058",
+      "name": "Cutover"
+    },
+    {
+      "id": "wbs-065",
+      "projectId": "prj-3",
+      "parentId": "wbs-059",
+      "name": "Documentation"
+    },
+    {
+      "id": "wbs-066",
+      "projectId": "prj-3",
+      "parentId": "wbs-054",
+      "name": "Performance"
+    },
+    {
+      "id": "wbs-067",
+      "projectId": "prj-3",
+      "parentId": "wbs-055",
+      "name": "Review"
+    },
+    {
+      "id": "wbs-068",
+      "projectId": "prj-3",
+      "parentId": "wbs-056",
+      "name": "Rework"
+    },
+    {
+      "id": "wbs-069",
+      "projectId": "prj-3",
+      "parentId": "wbs-057",
+      "name": "Sign-off"
+    },
+    {
+      "id": "wbs-070",
+      "projectId": "prj-3",
+      "parentId": "wbs-058",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-071",
+      "projectId": "prj-3",
+      "parentId": "wbs-059",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-072",
+      "projectId": "prj-3",
+      "parentId": "wbs-054",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-073",
+      "projectId": "prj-4",
+      "parentId": null,
+      "name": "Extraction"
+    },
+    {
+      "id": "wbs-074",
+      "projectId": "prj-4",
+      "parentId": null,
+      "name": "Load and reconcile"
+    },
+    {
+      "id": "wbs-075",
+      "projectId": "prj-4",
+      "parentId": "wbs-073",
+      "name": "Discovery"
+    },
+    {
+      "id": "wbs-076",
+      "projectId": "prj-4",
+      "parentId": "wbs-074",
+      "name": "Core build"
+    },
+    {
+      "id": "wbs-077",
+      "projectId": "prj-4",
+      "parentId": "wbs-073",
+      "name": "Integration"
+    },
+    {
+      "id": "wbs-078",
+      "projectId": "prj-4",
+      "parentId": "wbs-074",
+      "name": "Migration"
+    },
+    {
+      "id": "wbs-079",
+      "projectId": "prj-4",
+      "parentId": "wbs-073",
+      "name": "Hardening"
+    },
+    {
+      "id": "wbs-080",
+      "projectId": "prj-4",
+      "parentId": "wbs-075",
+      "name": "Design"
+    },
+    {
+      "id": "wbs-081",
+      "projectId": "prj-4",
+      "parentId": "wbs-076",
+      "name": "Implementation"
+    },
+    {
+      "id": "wbs-082",
+      "projectId": "prj-4",
+      "parentId": "wbs-077",
+      "name": "Test data"
+    },
+    {
+      "id": "wbs-083",
+      "projectId": "prj-4",
+      "parentId": "wbs-078",
+      "name": "Regression"
+    },
+    {
+      "id": "wbs-084",
+      "projectId": "prj-4",
+      "parentId": "wbs-079",
+      "name": "Cutover"
+    },
+    {
+      "id": "wbs-085",
+      "projectId": "prj-4",
+      "parentId": "wbs-075",
+      "name": "Documentation"
+    },
+    {
+      "id": "wbs-086",
+      "projectId": "prj-4",
+      "parentId": "wbs-076",
+      "name": "Performance"
+    },
+    {
+      "id": "wbs-087",
+      "projectId": "prj-4",
+      "parentId": "wbs-077",
+      "name": "Review"
+    },
+    {
+      "id": "wbs-088",
+      "projectId": "prj-4",
+      "parentId": "wbs-078",
+      "name": "Rework"
+    },
+    {
+      "id": "wbs-089",
+      "projectId": "prj-4",
+      "parentId": "wbs-079",
+      "name": "Sign-off"
+    },
+    {
+      "id": "wbs-090",
+      "projectId": "prj-4",
+      "parentId": "wbs-075",
+      "name": "Design"
+    }
+  ],
+  "allocations": [
+    {
+      "id": "alloc-001",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-001",
+      "month": "2026-03",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-002",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-04",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-003",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2026-04",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-004",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-04",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-005",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-04",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-006",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-04",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-007",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-04",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-008",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2026-04",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-009",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-04",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-010",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-04",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-011",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-04",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-012",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-04",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-013",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2026-04",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-014",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-04",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-015",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-04",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-016",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-06",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-017",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-07",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-018",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-08",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-019",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-09",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-020",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-10",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-021",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-11",
+      "amount": 0.16
+    },
+    {
+      "id": "alloc-022",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2026-12",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-023",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2027-01",
+      "amount": 0.08
+    },
+    {
+      "id": "alloc-024",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-016",
+      "month": "2027-02",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-025",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2026-08",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-026",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2026-09",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-027",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2026-10",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-028",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2026-11",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-029",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-030",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2027-01",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-031",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2027-02",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-032",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-044",
+      "month": "2027-03",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-033",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-05",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-034",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-06",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-035",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-07",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-036",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-08",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-037",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-09",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-038",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-10",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-039",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-11",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-040",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2026-12",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-041",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2027-01",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-042",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2027-02",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-043",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-038",
+      "month": "2027-03",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-044",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-07",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-045",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-08",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-046",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-09",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-047",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-10",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-048",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-11",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-049",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2026-12",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-050",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2027-01",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-051",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2027-02",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-052",
+      "breakdownItemId": "wbs-026",
+      "employeeId": "emp-055",
+      "month": "2027-03",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-053",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-04",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-054",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-05",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-055",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-06",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-056",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-07",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-057",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-08",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-058",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-09",
+      "amount": 0.16
+    },
+    {
+      "id": "alloc-059",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-10",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-060",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-056",
+      "month": "2026-11",
+      "amount": 0.08
+    },
+    {
+      "id": "alloc-061",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-06",
+      "amount": 0.07
+    },
+    {
+      "id": "alloc-062",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-07",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-063",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-08",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-064",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-09",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-065",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-10",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-066",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-11",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-067",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2026-12",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-068",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2027-01",
+      "amount": 0.1
+    },
+    {
+      "id": "alloc-069",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-034",
+      "month": "2027-02",
+      "amount": 0.07
+    },
+    {
+      "id": "alloc-070",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2026-08",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-071",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2026-09",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-072",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2026-10",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-073",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2026-11",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-074",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-075",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2027-01",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-076",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2027-02",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-077",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-012",
+      "month": "2027-03",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-078",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-05",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-079",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-06",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-080",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-07",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-081",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-08",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-082",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-09",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-083",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-10",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-084",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-11",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-085",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2026-12",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-086",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2027-01",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-087",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2027-02",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-088",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-027",
+      "month": "2027-03",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-089",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-07",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-090",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-08",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-091",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-09",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-092",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-10",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-093",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-11",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-094",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2026-12",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-095",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2027-01",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-096",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2027-02",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-097",
+      "breakdownItemId": "wbs-080",
+      "employeeId": "emp-060",
+      "month": "2027-03",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-098",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-04",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-099",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-05",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-100",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-06",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-101",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-07",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-102",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-08",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-103",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-09",
+      "amount": 0.32
+    },
+    {
+      "id": "alloc-104",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-10",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-105",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-013",
+      "month": "2026-11",
+      "amount": 0.16
+    },
+    {
+      "id": "alloc-106",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-06",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-107",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-07",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-108",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-08",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-109",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-09",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-110",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-10",
+      "amount": 0.5
+    },
+    {
+      "id": "alloc-111",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-11",
+      "amount": 0.4
+    },
+    {
+      "id": "alloc-112",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-113",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2027-01",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-114",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-005",
+      "month": "2027-02",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-115",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2026-08",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-116",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2026-09",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-117",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2026-10",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-118",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2026-11",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-119",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-120",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2027-01",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-121",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2027-02",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-122",
+      "breakdownItemId": "wbs-085",
+      "employeeId": "emp-031",
+      "month": "2027-03",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-123",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-05",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-124",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-06",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-125",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-07",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-126",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-08",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-127",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-09",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-128",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-10",
+      "amount": 0.16
+    },
+    {
+      "id": "alloc-129",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-11",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-130",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2026-12",
+      "amount": 0.08
+    },
+    {
+      "id": "alloc-131",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2027-01",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-132",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2027-02",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-133",
+      "breakdownItemId": "wbs-088",
+      "employeeId": "emp-023",
+      "month": "2027-03",
+      "amount": 0.06
+    },
+    {
+      "id": "alloc-134",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-07",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-135",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-08",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-136",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-09",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-137",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-10",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-138",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-11",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-139",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2026-12",
+      "amount": 0.24
+    },
+    {
+      "id": "alloc-140",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2027-01",
+      "amount": 0.18
+    },
+    {
+      "id": "alloc-141",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2027-02",
+      "amount": 0.12
+    },
+    {
+      "id": "alloc-142",
+      "breakdownItemId": "wbs-090",
+      "employeeId": "emp-047",
+      "month": "2027-03",
+      "amount": 0.09
+    },
+    {
+      "id": "alloc-143",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-04",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-144",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-05",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-145",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-06",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-146",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-07",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-147",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-08",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-148",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-09",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-149",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-10",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-150",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-11",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-151",
+      "breakdownItemId": "wbs-012",
+      "employeeId": "emp-002",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-152",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-05",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-153",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-06",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-154",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-07",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-155",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-08",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-156",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-09",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-157",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-10",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-158",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-11",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-159",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-160",
+      "breakdownItemId": "wbs-018",
+      "employeeId": "emp-002",
+      "month": "2027-01",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-161",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-06",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-162",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-07",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-163",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-08",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-164",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-09",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-165",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-10",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-166",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-11",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-167",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-168",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2027-01",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-169",
+      "breakdownItemId": "wbs-016",
+      "employeeId": "emp-016",
+      "month": "2027-02",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-170",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2026-07",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-171",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2026-08",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-172",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2026-09",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-173",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2026-10",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-174",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2026-11",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-175",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2026-12",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-176",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2027-01",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-177",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2027-02",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-178",
+      "breakdownItemId": "wbs-038",
+      "employeeId": "emp-005",
+      "month": "2027-03",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-179",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-04",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-180",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-05",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-181",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-06",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-182",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-07",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-183",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-08",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-184",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-09",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-185",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-10",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-186",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-11",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-187",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-034",
+      "month": "2026-12",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-188",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-05",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-189",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-06",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-190",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-07",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-191",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-08",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-192",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-09",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-193",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-10",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-194",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-11",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-195",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2026-12",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-196",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-023",
+      "month": "2027-01",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-197",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-06",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-198",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-07",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-199",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-08",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-200",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-09",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-201",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-10",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-202",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-11",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-203",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2026-12",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-204",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2027-01",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-205",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-013",
+      "month": "2027-02",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-206",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2026-07",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-207",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2026-08",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-208",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2026-09",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-209",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2026-10",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-210",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2026-11",
+      "amount": 0.2
+    },
+    {
+      "id": "alloc-211",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2026-12",
+      "amount": 0.25
+    },
+    {
+      "id": "alloc-212",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2027-01",
+      "amount": 0.3
+    },
+    {
+      "id": "alloc-213",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2027-02",
+      "amount": 0.35
+    },
+    {
+      "id": "alloc-214",
+      "breakdownItemId": "wbs-037",
+      "employeeId": "emp-060",
+      "month": "2027-03",
+      "amount": 0.15
+    },
+    {
+      "id": "alloc-215",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-016",
+      "month": "2026-06",
+      "amount": 0.9
+    },
+    {
+      "id": "alloc-216",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-016",
+      "month": "2026-07",
+      "amount": 0.9
+    },
+    {
+      "id": "alloc-217",
+      "breakdownItemId": "wbs-045",
+      "employeeId": "emp-016",
+      "month": "2026-08",
+      "amount": 0.9
+    },
+    {
+      "id": "alloc-218",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-005",
+      "month": "2026-05",
+      "amount": 0.8
+    },
+    {
+      "id": "alloc-219",
+      "breakdownItemId": "wbs-081",
+      "employeeId": "emp-005",
+      "month": "2026-06",
+      "amount": 0.8
+    },
+    {
+      "id": "alloc-220",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-034",
+      "month": "2026-07",
+      "amount": 0.85
+    },
+    {
+      "id": "alloc-221",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-034",
+      "month": "2026-08",
+      "amount": 0.85
+    },
+    {
+      "id": "alloc-222",
+      "breakdownItemId": "wbs-041",
+      "employeeId": "emp-034",
+      "month": "2026-09",
+      "amount": 0.85
+    },
+    {
+      "id": "alloc-223",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-060",
+      "month": "2026-05",
+      "amount": 0.95
+    },
+    {
+      "id": "alloc-224",
+      "breakdownItemId": "wbs-084",
+      "employeeId": "emp-060",
+      "month": "2026-06",
+      "amount": 0.95
+    }
+  ],
+  "_allocationsNote": "alloc-001..015 are the original fixture rows, kept verbatim (including the 2026-03 Fig.4 reference cell just outside the grid horizon). alloc-016+ are a DETERMINISTIC DEMO FILL across 2026-04..2027-03 so the roll-up view is populated and a few people are deliberately over capacity (R4/R5). These are generated, not the original 720-row source fixture -- replace the whole 'allocations' array with the real seed for grading."
+}

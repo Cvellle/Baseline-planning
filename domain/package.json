@@ -1,0 +1,19 @@
+{
+  "name": "@baseline/domain",
+  "version": "1.0.0",
+  "description": "Pure calculation logic for Baseline: rate splitting, working-day arithmetic, unit conversion, rounding, capacity. No React, no browser APIs.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
