@@ -8,6 +8,11 @@ services:
       interval: 5s
       timeout: 3s
       retries: 10
+    volumes:
+      # Persists edits (rates, allocations, breakdown items) across
+      # container restarts, not just browser reloads. Delete this volume
+      # (or hit POST /api/reset) to go back to the seed fixture.
+      - api-data:/app/api/data
 
   people:
     build:
@@ -22,6 +27,9 @@ services:
       timeout: 3s
       retries: 10
     ports:
+      # Optional: lets you open People on its own, with no Shell around it,
+      # to demonstrate "standalone and hosted from one build". Not required
+      # by the one-command / localhost:8080 requirement -- see README.
       - "8081:80"
 
   delivery:
@@ -50,5 +58,18 @@ services:
         condition: service_healthy
       api:
         condition: service_healthy
+    environment:
+      # Defaults already point at the reverse-proxied paths below, so this
+      # section is only here to make the runtime-configurability explicit
+      # and easy to override -- e.g. point PEOPLE_REMOTE_URL at a totally
+      # different deployment's URL without rebuilding this image at all.
+      PEOPLE_REMOTE_URL: /people-remote/remoteEntry.js
+      DELIVERY_REMOTE_URL: /delivery-remote/remoteEntry.js
+      PEOPLE_UPSTREAM: people:80
+      DELIVERY_UPSTREAM: delivery:80
+      API_UPSTREAM: api:3000
     ports:
       - "8080:80"
+
+volumes:
+  api-data:

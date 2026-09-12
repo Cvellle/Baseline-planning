@@ -9,6 +9,8 @@
     "dev": "node --watch src/server.js"
   },
   "dependencies": {
+    "@baseline/domain": "file:../domain",
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   }
 }
