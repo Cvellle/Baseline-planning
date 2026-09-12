@@ -28,6 +28,16 @@ Then open (or switch to) that tab in Shell. Shell stays up and shows a fallback 
 
 Bring it back with `docker compose start people`, then hit Retry in the panel.
 
+## Tests
+
+    cd domain
+    npm install
+    npm test
+
+`domain` is the only package with tests -- it's the only one that's pure calculation logic with no
+browser or server involved, which is what the brief asks to see tested. `api`, `people`, `delivery`
+and `shell` have no `test` script.
+
 ## Repo map
 
     domain/                 pure calculation logic -- no browser, no server
