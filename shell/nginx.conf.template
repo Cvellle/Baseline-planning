@@ -8,10 +8,15 @@ server {
     root /usr/share/nginx/html;
     index index.html;
 
-    # Hashed build assets must 404 when missing -- falling back to
-    # index.html here would mask a stale/removed chunk reference as a 200
-    # text/html response instead of a clear 404.
-    # Content-hashed, safe to cache forever.
+    # Docker's embedded DNS, with a short TTL so a redeployed people/delivery/api
+    # container (new container, new IP, same service name) is picked up within
+    # seconds -- without this, a plain `proxy_pass http://people:80/;` resolves
+    # once and nginx keeps proxying to the old IP until Shell itself restarts,
+    # even though People and Delivery are supposed to redeploy independently.
+    resolver 127.0.0.11 valid=10s;
+
+    # Content-hashed, safe to cache forever; missing ones must 404 rather
+    # than falling back to index.html as a 200 text/html response.
     location /assets/ {
         try_files $uri =404;
         add_header Cache-Control "public, max-age=31536000, immutable";
@@ -29,17 +34,28 @@ server {
     # reachable under /people-remote/ on Shell's own origin -- this is
     # what lets the browser fetch it with zero CORS configuration.
     location /people-remote/ {
-        proxy_pass http://${PEOPLE_UPSTREAM}/;
+        # Routing the hostname through a variable is what makes nginx honor
+        # the `resolver` above and re-look-up the address per request instead
+        # of caching it once at startup -- but a variable proxy_pass loses
+        # nginx's automatic location-prefix stripping, so `rewrite ... break`
+        # strips /people-remote/ ourselves before proxying bare (no URI part
+        # on proxy_pass, which is what makes the rewritten URI apply).
+        set $people_upstream http://${PEOPLE_UPSTREAM};
+        rewrite ^/people-remote/(.*)$ /$1 break;
+        proxy_pass $people_upstream;
         proxy_http_version 1.1;
     }
 
     location /delivery-remote/ {
-        proxy_pass http://${DELIVERY_UPSTREAM}/;
+        set $delivery_upstream http://${DELIVERY_UPSTREAM};
+        rewrite ^/delivery-remote/(.*)$ /$1 break;
+        proxy_pass $delivery_upstream;
         proxy_http_version 1.1;
     }
 
     location /api/ {
-        proxy_pass http://${API_UPSTREAM};
+        set $api_upstream http://${API_UPSTREAM};
+        proxy_pass $api_upstream;
         proxy_http_version 1.1;
         proxy_set_header Connection '';
         proxy_buffering off; # required so the SSE endpoint streams instead of batching

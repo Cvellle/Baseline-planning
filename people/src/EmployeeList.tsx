@@ -5,7 +5,7 @@ interface Props {
   employees: Employee[];
   selectedId: string | null;
   onSelect: (id: string) => void;
-  overByEmployee: Map<string, CapacityFlag[]>;
+  overByEmployee: Record<string, CapacityFlag[]>;
 }
 
 export function EmployeeList({ employees, selectedId, onSelect, overByEmployee }: Props) {
@@ -31,7 +31,7 @@ export function EmployeeList({ employees, selectedId, onSelect, overByEmployee }
       />
       <div style={{ maxHeight: 480, overflowY: "auto", border: "1px solid #ddd" }}>
         {filtered.map((e) => {
-          const over = overByEmployee.get(e.id);
+          const over = overByEmployee[e.id];
           return (
             <div
               key={e.id}

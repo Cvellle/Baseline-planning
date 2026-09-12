@@ -82,28 +82,26 @@ export function computeRollup(input: ComputeRollupInput): RollupResult {
   const { items, allocations, employees, rates, months, unit } = input;
   const decimals = DISPLAY_PRECISION[unit];
 
-  const employeesById = new Map(employees.map((e) => [e.id, e]));
-  const ratesByEmployee = new Map<string, RateRecord[]>();
-  for (const r of rates) {
-    const list = ratesByEmployee.get(r.employeeId) ?? [];
-    list.push(r);
-    ratesByEmployee.set(r.employeeId, list);
-  }
+  const employeesById: Record<string, Employee> = Object.fromEntries(employees.map((e) => [e.id, e]));
 
-  const childrenByParent = new Map<string | null, BreakdownItem[]>();
-  for (const item of items) {
-    const list = childrenByParent.get(item.parentId) ?? [];
-    list.push(item);
-    childrenByParent.set(item.parentId, list);
-  }
-  const isLeaf = (id: string) => (childrenByParent.get(id) ?? []).length === 0;
+  const ratesByEmployee = rates.reduce<Record<string, RateRecord[]>>(
+    (byEmployee, r) => ({ ...byEmployee, [r.employeeId]: [...(byEmployee[r.employeeId] ?? []), r] }),
+    {}
+  );
 
-  const allocationsByItem = new Map<string, Allocation[]>();
-  for (const a of allocations) {
-    const list = allocationsByItem.get(a.breakdownItemId) ?? [];
-    list.push(a);
-    allocationsByItem.set(a.breakdownItemId, list);
-  }
+  // Record keys must be strings, so root items (parentId === null) group
+  // under this sentinel instead.
+  const ROOT = "__root__";
+  const childrenByParent = items.reduce<Record<string, BreakdownItem[]>>((byParent, item) => {
+    const key = item.parentId ?? ROOT;
+    return { ...byParent, [key]: [...(byParent[key] ?? []), item] };
+  }, {});
+  const isLeaf = (id: string) => (childrenByParent[id] ?? []).length === 0;
+
+  const allocationsByItem = allocations.reduce<Record<string, Allocation[]>>(
+    (byItem, a) => ({ ...byItem, [a.breakdownItemId]: [...(byItem[a.breakdownItemId] ?? []), a] }),
+    {}
+  );
 
   let hasBeforeFirstRate = false;
 
@@ -112,9 +110,9 @@ export function computeRollup(input: ComputeRollupInput): RollupResult {
     const { year, month1 } = parseYearMonth(month);
     const workingDaysInMonth = getWorkingDaysInMonth(year, month1);
     let sum = 0;
-    for (const a of allocationsByItem.get(itemId) ?? []) {
+    for (const a of allocationsByItem[itemId] ?? []) {
       if (a.month !== month) continue;
-      const employee = employeesById.get(a.employeeId);
+      const employee = employeesById[a.employeeId];
       if (!employee) continue;
 
       if (unit === "hours") {
@@ -122,7 +120,7 @@ export function computeRollup(input: ComputeRollupInput): RollupResult {
       } else if (unit === "cost") {
         const breakdown = computeMonthCost(
           employee.weeklyHours,
-          ratesByEmployee.get(a.employeeId) ?? [],
+          ratesByEmployee[a.employeeId] ?? [],
           year,
           month1,
           a.hours
@@ -139,7 +137,7 @@ export function computeRollup(input: ComputeRollupInput): RollupResult {
     return sum;
   }
 
-  const rowsById = new Map<string, RollupRow>();
+  const rowsById: Record<string, RollupRow> = {};
 
   /** Post-order: fill in a node from its children (or its allocations, if a leaf). */
   function build(item: BreakdownItem, depth: number): RollupRow {
@@ -153,7 +151,7 @@ export function computeRollup(input: ComputeRollupInput): RollupResult {
         byMonth[m] = displayed[i];
       });
     } else {
-      const children = (childrenByParent.get(item.id) ?? []).map((c) =>
+      const children = (childrenByParent[item.id] ?? []).map((c) =>
         build(c, depth + 1)
       );
       for (const m of months) {
@@ -177,26 +175,26 @@ export function computeRollup(input: ComputeRollupInput): RollupResult {
       byMonth,
       rowTotal,
     };
-    rowsById.set(item.id, row);
+    rowsById[item.id] = row;
     return row;
   }
 
-  const roots = childrenByParent.get(null) ?? [];
+  const roots = childrenByParent[ROOT] ?? [];
   for (const root of roots) build(root, 0);
 
   // Emit rows in depth-first preorder so the client can indent by depth.
   const rows: RollupRow[] = [];
   function emit(item: BreakdownItem) {
-    const row = rowsById.get(item.id);
+    const row = rowsById[item.id];
     if (row) rows.push(row);
-    for (const child of childrenByParent.get(item.id) ?? []) emit(child);
+    for (const child of childrenByParent[item.id] ?? []) emit(child);
   }
   for (const root of roots) emit(root);
 
   const columnTotals: Record<string, number> = {};
   for (const m of months) {
     columnTotals[m] = roundTo(
-      roots.reduce((s, r) => s + (rowsById.get(r.id)?.byMonth[m] ?? 0), 0),
+      roots.reduce((s, r) => s + (rowsById[r.id]?.byMonth[m] ?? 0), 0),
       decimals
     );
   }

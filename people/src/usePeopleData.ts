@@ -38,18 +38,20 @@ export function usePeopleData() {
   }, [selectedId]);
 
   // employeeId -> that person's over-capacity months (R5: oversubscribed in People)
-  const overByEmployee = useMemo(() => {
-    const map = new Map<string, CapacityFlag[]>();
-    for (const f of capacityFlags) {
-      const list = map.get(f.employeeId) ?? [];
-      list.push(f);
-      map.set(f.employeeId, list);
-    }
-    return map;
-  }, [capacityFlags]);
+  const overByEmployee = useMemo(
+    () =>
+      capacityFlags.reduce<Record<string, CapacityFlag[]>>(
+        (byEmployee, f) => ({
+          ...byEmployee,
+          [f.employeeId]: [...(byEmployee[f.employeeId] ?? []), f],
+        }),
+        {}
+      ),
+    [capacityFlags]
+  );
 
   const selected = employees.find((e) => e.id === selectedId) ?? null;
-  const selectedOver = selectedId ? overByEmployee.get(selectedId) ?? [] : [];
+  const selectedOver = selectedId ? overByEmployee[selectedId] ?? [] : [];
 
   async function addRate(validFrom: string, hourlyCost: number) {
     if (!selectedId) return;

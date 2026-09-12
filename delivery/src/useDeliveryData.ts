@@ -98,10 +98,11 @@ export function useDeliveryData(currency: DisplayCurrency, unit: DisplayUnit) {
   async function refreshAllocations(itemId: string) {
     const rows = await api.listAllocations({ breakdownItemId: itemId });
     setAllocations(rows);
-    const pairs = new Set(rows.map((r) => `${r.employeeId}:${r.month}`));
+    const allKeys = rows.map((r) => `${r.employeeId}:${r.month}`);
+    const pairs = allKeys.filter((key, i) => allKeys.indexOf(key) === i);
     const info: Record<string, CellInfo> = {};
     await Promise.all(
-      [...pairs].map(async (key) => {
+      pairs.map(async (key) => {
         const [employeeId, month] = key.split(":");
         const res = await api.monthCost(employeeId, month, itemId);
         info[key] = {
@@ -118,31 +119,29 @@ export function useDeliveryData(currency: DisplayCurrency, unit: DisplayUnit) {
   const childrenOf = (id: string) => items.filter((i) => i.parentId === id);
   const isLeaf = (id: string) => childrenOf(id).length === 0;
 
-  const rowEmployeeIds = useMemo(
-    () => [...new Set(allocations.map((a) => a.employeeId))],
-    [allocations]
-  );
+  const rowEmployeeIds = useMemo(() => {
+    const ids = allocations.map((a) => a.employeeId);
+    return ids.filter((id, i) => ids.indexOf(id) === i);
+  }, [allocations]);
 
-  const overCapacityNotes = useMemo(() => {
-    const seen = new Set<string>();
-    const notes: { key: string; text: string }[] = [];
-    for (const [key, info] of Object.entries(cellInfo)) {
-      if (!info.over || !info.causing) continue;
-      const [employeeId, month] = key.split(":");
-      const emp = employees.find((e) => e.id === employeeId)?.name ?? employeeId;
-      const c = info.causing;
-      const dedupe = `${employeeId}:${month}`;
-      if (seen.has(dedupe)) continue;
-      seen.add(dedupe);
-      notes.push({
-        key: dedupe,
-        text: `${emp} is over capacity in ${shortMonth(month)} once every project is counted — caused by the most recent edit: ${c.hours.toFixed(
-          1
-        )}h on "${c.breakdownItemName}"${c.projectName ? ` (${c.projectName})` : ""}.`,
-      });
-    }
-    return notes;
-  }, [cellInfo, employees]);
+  // Object.entries keys are already unique, so no dedupe step is needed.
+  const overCapacityNotes = useMemo(
+    () =>
+      Object.entries(cellInfo)
+        .filter(([, info]) => info.over && info.causing)
+        .map(([key, info]) => {
+          const [employeeId, month] = key.split(":");
+          const emp = employees.find((e) => e.id === employeeId)?.name ?? employeeId;
+          const c = info.causing!;
+          return {
+            key,
+            text: `${emp} is over capacity in ${shortMonth(month)} once every project is counted — caused by the most recent edit: ${c.hours.toFixed(
+              1
+            )}h on "${c.breakdownItemName}"${c.projectName ? ` (${c.projectName})` : ""}.`,
+          };
+        }),
+    [cellInfo, employees]
+  );
 
   async function handleAddChild(parentId: string | null, name: string): Promise<ActionResult> {
     if (!projectId) return { ok: false, message: "No project selected." };

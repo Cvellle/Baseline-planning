@@ -28,18 +28,18 @@ function flattenItems(items: BreakdownItem[], parentId: string | null = null, de
 
 /** Excludes an item and its whole subtree, so you can't move something under itself. */
 function moveCandidates(items: BreakdownItem[], excludeId: string): { item: BreakdownItem; depth: number }[] {
-  const excluded = new Set([excludeId]);
+  let excluded = [excludeId];
   let grew = true;
   while (grew) {
     grew = false;
     for (const i of items) {
-      if (i.parentId && excluded.has(i.parentId) && !excluded.has(i.id)) {
-        excluded.add(i.id);
+      if (i.parentId && excluded.includes(i.parentId) && !excluded.includes(i.id)) {
+        excluded = [...excluded, i.id];
         grew = true;
       }
     }
   }
-  return flattenItems(items).filter(({ item }) => !excluded.has(item.id));
+  return flattenItems(items).filter(({ item }) => !excluded.includes(item.id));
 }
 
 export function BreakdownTree({ items, parentId, depth, selectedItemId, isLeaf, onSelect, ...handlers }: Props) {
