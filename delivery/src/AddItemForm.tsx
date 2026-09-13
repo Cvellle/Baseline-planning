@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ActionResult } from "./useDeliveryData";
+import { btn } from "./buttonStyles";
 
 interface Props {
   placeholder?: string;
@@ -26,7 +27,7 @@ export function AddItemForm({ placeholder = "Item name", onAdd, onDone }: Props)
   }
 
   return (
-    <span style={{ display: "inline-flex", gap: 4, alignItems: "center" }}>
+    <span style={{ display: "inline-flex", flexWrap: "wrap", gap: 4, alignItems: "center" }}>
       <input
         autoFocus
         placeholder={placeholder}
@@ -38,10 +39,10 @@ export function AddItemForm({ placeholder = "Item name", onAdd, onDone }: Props)
         }}
         style={{ width: 140 }}
       />
-      <button onClick={submit} disabled={busy || !name.trim()}>
+      <button onClick={submit} disabled={busy || !name.trim()} style={btn}>
         Add
       </button>
-      <button onClick={onDone}>Cancel</button>
+      <button onClick={onDone} style={btn}>Cancel</button>
       {error && <span style={{ color: "#a11", fontSize: 11 }}>{error}</span>}
     </span>
   );

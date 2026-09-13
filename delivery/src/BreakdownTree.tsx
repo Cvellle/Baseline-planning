@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BreakdownItem } from "./api";
 import { ActionResult } from "./useDeliveryData";
 import { AddItemForm } from "./AddItemForm";
+import { btn } from "./buttonStyles";
 
 interface Handlers {
   onAddChild: (parentId: string | null, name: string) => Promise<ActionResult>;
@@ -110,6 +111,7 @@ function TreeRow({
         style={{
           display: "flex",
           alignItems: "center",
+          flexWrap: "wrap",
           gap: 6,
           padding: "2px 4px",
           background: item.id === selectedItemId ? "#eef" : "transparent",
@@ -139,8 +141,8 @@ function TreeRow({
         {action === "delete" ? (
           <span style={{ display: "inline-flex", gap: 4, alignItems: "center", fontSize: 12 }}>
             Delete?
-            <button onClick={submitDelete}>Yes</button>
-            <button onClick={reset}>No</button>
+            <button onClick={submitDelete} style={btn}>Yes</button>
+            <button onClick={reset} style={btn}>No</button>
           </span>
         ) : action === "move" ? (
           <span style={{ display: "inline-flex", gap: 4, alignItems: "center" }}>
@@ -152,23 +154,23 @@ function TreeRow({
                 </option>
               ))}
             </select>
-            <button onClick={submitMove}>Move</button>
-            <button onClick={reset}>Cancel</button>
+            <button onClick={submitMove} style={btn}>Move</button>
+            <button onClick={reset} style={btn}>Cancel</button>
           </span>
         ) : action === "addChild" ? (
           <AddItemForm onAdd={(name) => onAddChild(item.id, name)} onDone={reset} />
         ) : action === null ? (
           <>
-            <button onClick={() => setAction("addChild")} title="Add child">
+            <button onClick={() => setAction("addChild")} title="Add child" style={btn}>
               +
             </button>
-            <button onClick={() => setAction("rename")} title="Rename">
+            <button onClick={() => setAction("rename")} title="Rename" style={btn}>
               ✎
             </button>
-            <button onClick={() => setAction("move")} title="Move under another item">
+            <button onClick={() => setAction("move")} title="Move under another item" style={btn}>
               ⤴
             </button>
-            <button onClick={() => setAction("delete")} title="Delete">
+            <button onClick={() => setAction("delete")} title="Delete" style={btn}>
               ×
             </button>
           </>

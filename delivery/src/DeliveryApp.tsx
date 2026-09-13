@@ -7,6 +7,7 @@ import { BreakdownTree } from "./BreakdownTree";
 import { RollupView } from "./RollupView";
 import { StaffingGrid } from "./StaffingGrid";
 import { AddItemForm } from "./AddItemForm";
+import { btn } from "./buttonStyles";
 
 /**
  * This is the module Module Federation exposes as "./DeliveryApp" (see
@@ -92,12 +93,12 @@ export function DeliveryApp({ shell = STANDALONE_SHELL }: { shell?: ShellContext
       {view === "grid" && (
         <div style={{ display: "flex", gap: 24 }}>
           <div style={{ flex: "0 0 320px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 4 }}>
               <strong>Work breakdown</strong>
               {addingRoot ? (
                 <AddItemForm onAdd={(name) => handleAddChild(null, name)} onDone={() => setAddingRoot(false)} />
               ) : (
-                <button onClick={() => setAddingRoot(true)}>+ Root item</button>
+                <button onClick={() => setAddingRoot(true)} style={btn}>+ Root item</button>
               )}
             </div>
             <div style={{ marginTop: 8, maxHeight: 480, overflowY: "auto" }}>
@@ -116,7 +117,7 @@ export function DeliveryApp({ shell = STANDALONE_SHELL }: { shell?: ShellContext
             </div>
           </div>
 
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, minWidth: 0 }}>
             <StaffingGrid
               selectedItem={items.find((i) => i.id === selectedItemId)}
               months={months}

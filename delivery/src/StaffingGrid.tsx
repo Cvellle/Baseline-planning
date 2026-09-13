@@ -3,6 +3,7 @@ import { BreakdownItem, Employee } from "./api";
 import { CellInfo } from "./useDeliveryData";
 import { shortMonth } from "./months";
 import { th, td } from "./tableStyles";
+import { btn } from "./buttonStyles";
 
 interface Props {
   selectedItem: BreakdownItem | undefined;
@@ -49,7 +50,7 @@ export function StaffingGrid({
             onCancel={() => setAddingPerson(false)}
           />
         ) : (
-          <button onClick={() => setAddingPerson(true)} disabled={available.length === 0}>
+          <button onClick={() => setAddingPerson(true)} disabled={available.length === 0} style={btn}>
             + Add person
           </button>
         )}
@@ -142,10 +143,10 @@ function AddPersonForm({
           </option>
         ))}
       </select>
-      <button onClick={() => value && onAdd(value)} disabled={!value}>
+      <button onClick={() => value && onAdd(value)} disabled={!value} style={btn}>
         Add
       </button>
-      <button onClick={onCancel}>Cancel</button>
+      <button onClick={onCancel} style={btn}>Cancel</button>
     </span>
   );
 }
