@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BreakdownItem } from "./api";
 import { ActionResult } from "./useDeliveryData";
 import { AddItemForm } from "./AddItemForm";
-import { btn } from "./buttonStyles";
+import { btn, iconBtn } from "./buttonStyles";
 
 interface Handlers {
   onAddChild: (parentId: string | null, name: string) => Promise<ActionResult>;
@@ -161,16 +161,16 @@ function TreeRow({
           <AddItemForm onAdd={(name) => onAddChild(item.id, name)} onDone={reset} />
         ) : action === null ? (
           <>
-            <button onClick={() => setAction("addChild")} title="Add child" style={btn}>
+            <button onClick={() => setAction("addChild")} title="Add child" style={iconBtn}>
               +
             </button>
-            <button onClick={() => setAction("rename")} title="Rename" style={btn}>
+            <button onClick={() => setAction("rename")} title="Rename" style={iconBtn}>
               ✎
             </button>
-            <button onClick={() => setAction("move")} title="Move under another item" style={btn}>
+            <button onClick={() => setAction("move")} title="Move under another item" style={iconBtn}>
               ⤴
             </button>
-            <button onClick={() => setAction("delete")} title="Delete" style={btn}>
+            <button onClick={() => setAction("delete")} title="Delete" style={iconBtn}>
               ×
             </button>
           </>

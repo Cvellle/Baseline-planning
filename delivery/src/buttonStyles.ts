@@ -15,3 +15,10 @@ export const btn: CSSProperties = {
   whiteSpace: "nowrap",
   flex: "0 0 auto",
 };
+
+/** Small square style for icon-only buttons (single glyph, no text label). */
+export const iconBtn: CSSProperties = {
+  ...btn,
+  width: 24,
+  height: 24,
+};
